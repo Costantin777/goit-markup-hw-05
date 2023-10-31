@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- HEDER-->
-      <header class="header">
+    <header class="header">
       <div class="container container-head">
         <nav class="nav">
           <a class="logotype" href="./index.html"
@@ -66,8 +66,8 @@
             <li class="item-section-two">
               <div class="icons-section-tw">
                 <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-antenna-1"/>
-                  </svg>
+                  <use href="./images/icons.svg#icon-antenna" />
+                </svg>
               </div>
               <h3 class="title-three">Strategy</h3>
               <p class="paragraph">
@@ -78,7 +78,7 @@
             <li class="item-section-two">
               <div class="icons-section-tw">
                 <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-clock-1"></use>
+                  <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="title-three">Punctuality</h3>
@@ -90,7 +90,7 @@
             <li class="item-section-two">
               <div class="icons-section-tw">
                 <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                  <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="title-three">Diligence</h3>
@@ -102,7 +102,7 @@
             <li class="item-section-two">
               <div class="icons-section-tw">
                 <svg width="64" height="64">
-                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                  <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="title-three">Technologies</h3>
@@ -457,7 +457,118 @@
             </li>
           </ul>
         </div>
+        <!--Subscribe-->
+        <div class="subscribe">
+          <p class="text-footer-social">Subscribe</p>
+          <form name="Subscribe" autocomplete="off" class="form-footer">
+            <label class="button-text">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="email"
+            /></label>
+
+            <button type="submit" name="button-footer" class="button-footer">
+              Subscribe
+              <svg class="icon-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!--Backdrop-->
+
+    <div class="backdrop">
+      <div class="modal">
+        <button name="button-close" type="button" class="close-batton">
+          <svg class="icon-modal" width="8" height="8">
+            <use href="./images/icons.svg#icon-close" class="icon-close"></use>
+          </svg>
+        </button>
+        <p class="lable-contact">
+          Leave your contacts and we will call you back
+        </p>
+        <form name="contacts" class="form-modal">
+          <div class="field">
+            <label for="user-name" class="name-field"> Name </label>
+            <div class="field-container">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="field-text"
+              />
+              <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field">
+            <label class="name-field" for="user-phone"> Phone </label>
+            <div class="field-container">
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                class="field-text"
+              />
+
+              <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="field">
+            <label class="name-field" for="user-email"> Email </label>
+            <div class="field-container">
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="field-text"
+              />
+
+              <svg class="icon-field" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="comment">
+            <label class="name-field" for="user-comment"> Comment </label>
+            <textarea
+              class="comment-multiline"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+              class="user-privacy visually-hidden"
+            />
+
+            <label for="user-privacy" class="label-checkbox">
+              <span class="icon-checkbox">
+                <svg class="icon-chec" width="10" height="8">
+                  <use href="./images/icons.svg#icon-click"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+
+              <a href="" class="privacy-policy">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
